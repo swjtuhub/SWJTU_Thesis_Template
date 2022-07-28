@@ -23,6 +23,10 @@
 \RequirePackage[subfigure]{tocloft}
 \RequirePackage{caption}
 \everymath{\displaystyle}
+%===========================目录省略号===========================%
+\usepackage{subfigure}
+\usepackage[subfigure]{tocloft}
+\renewcommand{\cftchapleader}{\cftdotfill{\cftdotsep}}
 %%%============================字体设置========================%%%
 \setmainfont{Times New Roman}
 \setCJKmainfont[Path=configuration/]{simsun.ttf}
@@ -76,31 +80,31 @@
     \text{本科毕业设计（论文）}}\\
     \vspace{1.5cm}
     {\hei \zihao{2}
-    碳-氮化硼纳米管超晶格的传热与力学性质研究}\\
+    西南交通大学本科生毕业论文（设计）LaTeX模板的制作}\\
     \vspace{1cm}
     {\hei \zihao{2}
-    Research on Heat Transfer and Mechanical Properties of Carbon-Boron Nitride Nanotube Superlattices}\\
+    Southwest Jiaotong University undergraduate graduation thesis (design) LaTeX template production}\\
     \vspace{1cm}
     \vfill\vfill
     {\hei\zihao{-4}
     \begin{tabular}{l}
       
-    \raisebox{-3ex}[0pt]{年\quad\quad 级：2018级}
+    \raisebox{-3ex}[0pt]{年\quad\quad 级：2077级}
     \\[3ex]
-    \raisebox{-3ex}[0pt]{学\quad\quad 号：2018115237}
+    \raisebox{-3ex}[0pt]{学\quad\quad 号：2077114514}
     \\[3ex]
-    \raisebox{-3ex}[0pt]{姓\quad\quad 名：萧贺源}
+    \raisebox{-3ex}[0pt]{姓\quad\quad 名：张三}
     \\[3ex]
-    \raisebox{-3ex}[0pt]{专\quad\quad 业：应用物理学}
+    \raisebox{-3ex}[0pt]{专\quad\quad 业：应用数学}
     \\[3ex]
-    \raisebox{-3ex}[0pt]{指导教师：倪宇翔}
+    \raisebox{-3ex}[0pt]{指导教师：李四}
     \\[3ex]
     \end{tabular}
     }
     \par
     \vspace{25mm}
     {
-    {\song \zihao{-4} 二〇二二年五月 \par}
+    {\song \zihao{-4} 二〇八〇年五月 \par}
     }
     \end{center}
   }
