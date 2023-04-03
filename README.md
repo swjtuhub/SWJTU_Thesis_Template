@@ -1,21 +1,17 @@
 # SWJTU Thesis Template
 
-本模板是是基于LaTeX的的西南交通大学本科生毕业论文模板
+本模板是是基于 LaTeX 的的西南交通大学本科生毕业论文模板
 
 ## 使用说明
 
-本模板已经按照2022年毕业论文的最新模板修改，如果有不同于教务处官方给出的模板的地方，请以官方模板为准。同时，欢迎各位将修改后的地方提交 pull request 至本仓库。
+本模板已经按照 2022 年毕业论文的最新模板修改，如果有不同于教务处官方给出的模板的地方，请以官方模板为准。同时，欢迎各位将修改后的地方提交 Pull Request 至本仓库。
 
 本模板的结构如下：
 
-```
+```text
 SWJTU Thesis Template
 ├── README.md
-├── SWJTU Bachelor thesis.bcf
-├── SWJTU Bachelor thesis.pdf
-├── SWJTU Bachelor thesis.run.xml
-├── SWJTU Bachelor thesis.synctex.gz
-├── SWJTU Bachelor thesis.tex
+├── SWJTUBachelorThesis.tex
 ├── abstract.tex
 ├── appendix1.tex
 ├── appendix2.tex
@@ -29,11 +25,8 @@ SWJTU Thesis Template
 ├── conclusion.tex
 ├── configuration
 │   ├── SWJTU.cls
-│   ├── comment&mission.aux
 │   ├── comment&mission.tex
-│   ├── commitment&authorization.aux
 │   ├── commitment&authorization.tex
-│   ├── references.aux
 │   ├── references.tex
 │   ├── simhei.ttf
 │   ├── simkai.ttf
@@ -58,15 +51,12 @@ SWJTU Thesis Template
 ## TODO
 
 * [ ] 将项目中文件重新安排，以达到内容与格式分离
-
-    * 个人信息（题目、学号、任务书等）单独放入一个文件中
-    * 无需修改的部分（例如 cls 文件、字体等放入格式文件夹中）
-    * 正文部分放入正文文件夹中
+  * 个人信息（题目、学号、任务书等）单独放入一个文件中
+  * 无需修改的部分（例如 cls 文件、字体等放入格式文件夹中）
+  * 正文部分放入正文文件夹中
 
 * [ ] 编写详细的文档，使完全不会LaTeX的纯萌新也可以使用
-
-    * 可以参考[北理工本科生毕业论文模板](https://github.com/BITNP/BIThesis)进行编写
-
+  * 可以参考[北理工本科生毕业论文模板](https://github.com/BITNP/BIThesis)进行编写
 
 ## 致谢
 
