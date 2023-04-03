@@ -62,55 +62,54 @@
 %----------------设置章首页页眉页脚----------------%
 \fancypagestyle{plain}
 {
-\fancyhf{}                                    
-\fancyhead[C]{\hei \zihao{-4} 西南交通大学本科毕业设计（论文）}
-\fancyfoot[C]{\hei \zihao{-4} 第\thepage 页}
+    \fancyhf{}
+    \fancyhead[C]{\hei \zihao{-4} 西南交通大学本科毕业设计（论文）}
+    \fancyfoot[C]{\hei \zihao{-4} 第\thepage 页}
 }
 
 %%%============================封面页设置========================%%%
 \def\maketitle{
-  \null
-  \thispagestyle{empty}
-  \begin{center}\leavevmode
-    \par
-    \vspace*{0.5cm}
-    {\hei \zihao{-2}
-    \text{西南交通大学}\\
-    \vspace{0.5cm}
-    \text{本科毕业设计（论文）}}\\
-    \vspace{1.5cm}
-    {\hei \zihao{2}
-    西南交通大学本科生毕业论文（设计）LaTeX模板的制作}\\
-    \vspace{1cm}
-    {\hei \zihao{2}
-    Southwest Jiaotong University undergraduate graduation thesis (design) LaTeX template production}\\
-    \vspace{1cm}
-    \vfill\vfill
-    {\hei\zihao{-4}
-    \begin{tabular}{l}
-      
-    \raisebox{-3ex}[0pt]{年\quad\quad 级：2077级}
-    \\[3ex]
-    \raisebox{-3ex}[0pt]{学\quad\quad 号：2077114514}
-    \\[3ex]
-    \raisebox{-3ex}[0pt]{姓\quad\quad 名：张三}
-    \\[3ex]
-    \raisebox{-3ex}[0pt]{专\quad\quad 业：应用数学}
-    \\[3ex]
-    \raisebox{-3ex}[0pt]{指导教师：李四}
-    \\[3ex]
-    \end{tabular}
-    }
-    \par
-    \vspace{25mm}
-    {
-    {\song \zihao{-4} 二〇八〇年五月 \par}
-    }
+    \null
+    \thispagestyle{empty}
+    \begin{center}\leavevmode
+        \par
+        \vspace*{0.5cm}
+        {\hei \zihao{-2}
+            \text{西南交通大学}\\
+            \vspace{0.5cm}
+            \text{本科毕业设计（论文）}}\\
+        \vspace{1.5cm}
+        {\hei \zihao{2}
+            西南交通大学本科生毕业论文（设计）LaTeX模板的制作}\\
+        \vspace{1cm}
+        {\hei \zihao{2}
+            Southwest Jiaotong University Undergraduate Graduation Thesis (Design) LaTeX Template Production}\\
+        \vspace{1cm}
+        \vfill\vfill
+        {\hei\zihao{-4}
+            \begin{tabular}{l}
+                \raisebox{-3ex}[0pt]{年\quad\quad 级：2077级}
+                \\[3ex]
+                \raisebox{-3ex}[0pt]{学\quad\quad 号：2077114514}
+                \\[3ex]
+                \raisebox{-3ex}[0pt]{姓\quad\quad 名：张三}
+                \\[3ex]
+                \raisebox{-3ex}[0pt]{专\quad\quad 业：应用数学}
+                \\[3ex]
+                \raisebox{-3ex}[0pt]{指导教师：李四}
+                \\[3ex]
+            \end{tabular}
+        }
+        \par
+        \vspace{25mm}
+        {
+            {\song \zihao{-4} 二〇八〇年五月 \par}
+        }
     \end{center}
-  }
+}
 
 %%%============================摘要及关键词========================%%%
-\newcommand\cnabstractname{摘要} 
+\newcommand\cnabstractname{摘要}
 \newcommand\enabstractname{Abstract}
 \newcommand\cnkeywords[1]{ {\noindent\hei\zihao{-4}\cnkeywordsname：}#1}
 \newcommand\cnkeywordsname{关键词}
@@ -119,18 +118,18 @@
 %----------------中文摘要环境----------------%
 \newenvironment{cnabstract}{
     \newpage
-\chapter[\cnabstractname]{\ziju{2}{\cnabstractname}}
+    \chapter[\cnabstractname]{\ziju{2}{\cnabstractname}}
     \song\zihao{-4}
     \@afterheading}
-    {\par}
+{\par}
 %----------------英文摘要环境----------------%
 \newenvironment{enabstract}{
     \newpage
     \chapter[\enabstractname]{\enabstractname}
     \song\zihao{-4}
     \@afterheading}
-    {\par}
-    
+{\par}
+
 %%%=============================杂项定义============================%%%
 %---------------------------自定义命令---------------------------%
 \renewcommand{\contentsname}{\hei\zihao{-2}\hfill 目\qquad 录\hfill}
@@ -154,7 +153,7 @@
 \setcounter{secnumdepth}{4}
 \RequirePackage[font=small,textfont=it,labelsep=quad]{caption}
 %---------------------------图表标题设置---------------------------%
-\renewcommand\figurename{\song\zihao{5} 图}  
+\renewcommand\figurename{\song\zihao{5} 图}
 \renewcommand\tablename{\song\zihao{5} 表}
 \newcommand{\chartname}[1]{\caption{\song\zihao{5} #1}}
 \renewcommand{\thefigure}{\arabic{chapter}-\arabic{figure}}
@@ -179,40 +178,40 @@
 %----------------在列表环境中抑制额外的行间距----------------%
 \makeatletter \setlength\partopsep{0pt}
 \def\@listI{\leftmargin\leftmargini
-            \parsep 0pt
-            \topsep \parsep
-            \itemsep \parsep}
+    \parsep 0pt
+    \topsep \parsep
+    \itemsep \parsep}
 \@listI
 \def\@listii {\leftmargin\leftmarginii
-              \labelwidth\leftmarginii
-              \advance\labelwidth-\labelsep
-              \parsep    \z@ \@plus\z@  \@minus\z@
-              \topsep    \parsep
-              \itemsep   \parsep}
+    \labelwidth\leftmarginii
+    \advance\labelwidth-\labelsep
+    \parsep    \z@ \@plus\z@  \@minus\z@
+    \topsep    \parsep
+    \itemsep   \parsep}
 \def\@listiii{\leftmargin\leftmarginiii
-              \labelwidth\leftmarginiii
-              \advance\labelwidth-\labelsep
-              \parsep    \z@ \@plus\z@  \@minus\z@
-              \topsep    \parsep
-              \itemsep   \parsep}
+    \labelwidth\leftmarginiii
+    \advance\labelwidth-\labelsep
+    \parsep    \z@ \@plus\z@  \@minus\z@
+    \topsep    \parsep
+    \itemsep   \parsep}
 \def\@listiv{\leftmargin\leftmarginiv
-              \labelwidth\leftmarginiv
-              \advance\labelwidth-\labelsep
-              \parsep    \z@ \@plus\z@  \@minus\z@
-              \topsep    \parsep
-              \itemsep   \parsep}
+    \labelwidth\leftmarginiv
+    \advance\labelwidth-\labelsep
+    \parsep    \z@ \@plus\z@  \@minus\z@
+    \topsep    \parsep
+    \itemsep   \parsep}
 \def\@listv{\leftmargin\leftmarginv
-              \labelwidth\leftmarginv
-              \advance\labelwidth-\labelsep
-              \parsep    \z@ \@plus\z@  \@minus\z@
-              \topsep    \parsep
-              \itemsep   \parsep}
+    \labelwidth\leftmarginv
+    \advance\labelwidth-\labelsep
+    \parsep    \z@ \@plus\z@  \@minus\z@
+    \topsep    \parsep
+    \itemsep   \parsep}
 \def\@listvi{\leftmargin\leftmarginvi
-              \labelwidth\leftmarginvi
-              \advance\labelwidth-\labelsep
-              \parsep    \z@ \@plus\z@  \@minus\z@
-              \topsep    \parsep
-              \itemsep   \parsep}
+    \labelwidth\leftmarginvi
+    \advance\labelwidth-\labelsep
+    \parsep    \z@ \@plus\z@  \@minus\z@
+    \topsep    \parsep
+    \itemsep   \parsep}
 %----------------更改列表环境的默认边界----------------%
 \setlength\leftmargini   {2\ccwd} \setlength\leftmarginii
 {\leftmargini} \setlength\leftmarginiii {\leftmargini}
@@ -223,16 +222,16 @@
 \setlength\listparindent{2\ccwd}
 %----------------更改列表环境中条目下的段落的缩进----------------%
 \def\list#1#2{\ifnum \@listdepth >5\relax \@toodeep
-     \else \global\advance\@listdepth\@ne \fi
-  \rightmargin \z@ \listparindent2\ccwd \itemindent \z@
-  \csname @list\romannumeral\the\@listdepth\endcsname
-  \def\@itemlabel{#1}\let\makelabel\@mklab \@nmbrlistfalse #2\relax
-  \@trivlist
-  \parskip\parsep \parindent\listparindent
-  \advance\linewidth -\rightmargin \advance\linewidth -\leftmargin
-  \advance\@totalleftmargin \leftmargin
-  \parshape \@ne \@totalleftmargin \linewidth
-  \ignorespaces}
+    \else \global\advance\@listdepth\@ne \fi
+    \rightmargin \z@ \listparindent2\ccwd \itemindent \z@
+    \csname @list\romannumeral\the\@listdepth\endcsname
+    \def\@itemlabel{#1}\let\makelabel\@mklab \@nmbrlistfalse #2\relax
+    \@trivlist
+    \parskip\parsep \parindent\listparindent
+    \advance\linewidth -\rightmargin \advance\linewidth -\leftmargin
+    \advance\@totalleftmargin \leftmargin
+    \parshape \@ne \@totalleftmargin \linewidth
+    \ignorespaces}
 \makeatother
 
 \endinput
