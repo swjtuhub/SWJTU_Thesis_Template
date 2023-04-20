@@ -46,7 +46,7 @@ SWJTU Thesis Template
 
 ### 编译方法
 
-使用 XeLaTeX 编译，如果有参考文献的话需要编译四次（xelatex->bibtex->xelatex\*2）。
+文档使用 XeLaTeX 进行编译。需要编译四次：XeLaTeX -> Biber -> XeLaTeX \* 2.
 
 ## TODO
 
