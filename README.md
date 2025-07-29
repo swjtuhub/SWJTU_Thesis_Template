@@ -2,6 +2,8 @@
 
 本模板是是基于 LaTeX 的的西南交通大学本科生毕业论文模板
 
+由于本仓库作者已经毕业很久了，本仓库已经很久没有更新。故在此指路`@abwuge`开发的更新（2025年）的版本：[SWJTU Bachelor Thesis](https://github.com/abwuge/SWJTU_Bachelor_Thesis)
+
 ## 使用说明
 
 本模板已经按照 2022 年毕业论文的最新模板修改，如果有不同于教务处官方给出的模板的地方，请以官方模板为准。同时，欢迎各位将修改后的地方提交 Pull Request 至本仓库。
@@ -48,16 +50,6 @@ SWJTU Thesis Template
 
 文档使用 XeLaTeX 进行编译。需要编译四次：XeLaTeX -> Biber -> XeLaTeX \* 2.
 
-## TODO
-
-* [ ] 将项目中文件重新安排，以达到内容与格式分离
-  * 个人信息（题目、学号、任务书等）单独放入一个文件中
-  * 无需修改的部分（例如 cls 文件、字体等放入格式文件夹中）
-  * 正文部分放入正文文件夹中
-
-* [ ] 编写详细的文档，使完全不会LaTeX的纯萌新也可以使用
-  * 可以参考[北理工本科生毕业论文模板](https://github.com/BITNP/BIThesis)进行编写
-
 ## 致谢
 
-~~待完善~~
+* 感谢 Xiling Zheng 提供的原始模板。
